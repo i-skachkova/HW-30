@@ -1,0 +1,34 @@
+.container{
+    height: 300px;
+    padding: 200px 500px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    
+    animation: box-running;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+}
+@keyframes box-running{
+    0%{
+        background-color: red;
+        transform: translate(0, 0);
+    }
+    25%{
+        background-color: blue;
+        transform: translate(0, 200px);
+    }
+    50%{
+        background-color: green;
+        transform: translate(200px, 200px)
+    }
+    75%{
+        background-color: yellow;
+        transform: translate(200px, 0);
+    }
+    100%{
+        background-color: red;
+        transform: translate(0, 0);
+    }
+}
